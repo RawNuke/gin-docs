@@ -83,3 +83,21 @@ npx sourcey build -o dist
 The build produced 9 HTML pages, search-index.json (171KB, 570 entries),
 llms.txt, llms-full.txt, sitemap.xml, sourcey.css, sourcey.js, and 8 OG
 images. The build completed in 14.9 seconds on macOS arm64 with go1.26.5.
+
+## Gap analysis summary for reviewers
+
+- Examples directory excluded: the `examples/` directory is not a Go
+  package so it does not appear in godoc output. A maintainer would want
+  these visible as they demonstrate real usage patterns.
+- No prose context: README, CHANGELOG, and BENCHMARKS are absent. A
+  visitor lands on raw API reference with no project introduction.
+- Source links unpinned: godoc source links resolve to master HEAD, not
+  the documented commit 34dac209. Code drift breaks source navigation.
+- Internal packages visible: internal/bytesconv and internal/fs appear in
+  the sidebar without grouping under an Internal section header.
+- Import paths use codec/json not internal/json: the module imports
+  reflect the older codec path, which may confuse readers.
+- No external_publication surface: the site is not adopted upstream and
+  lives on a personal GitHub Pages domain. A PR to gin-gonic/gin would
+  enable adoption on the project's own docs surface.
+
