@@ -5,7 +5,7 @@
       "label": "runx CLI version",
       "value": "runx-cli 0.8.2",
       "command": "npx @runxhq/cli --version",
-      "timestamp": "2026-08-07T00:55:00Z"
+      "timestamp": "2026-08-07T01:03:19Z"
     },
     {
       "label": "Sourcey version",
@@ -31,7 +31,9 @@
       "value": "godoc",
       "config": {
         "module": ".",
-        "packages": ["./..."],
+        "packages": [
+          "./..."
+        ],
         "mode": "auto",
         "includeTests": true
       }
@@ -43,9 +45,9 @@
     },
     {
       "label": "Build command",
-      "value": "npx sourcey build -o dist",
-      "output": "Sourcey: building documentation site\n  Pages:  8\n  Output: .../dist\n  Time:   14.9s",
-      "timestamp": "2026-08-07T00:55:00Z"
+      "value": "npx sourcey build -c sourcey.config.ts -o dist",
+      "output": "Sourcey: building documentation site\n  Pages:  8\n  Output: .../dist\n  Time:   4.5s",
+      "timestamp": "2026-08-07T01:03:19Z"
     },
     {
       "label": "Page list",
@@ -93,6 +95,15 @@
         "search-index.json",
         "_og/*.png (Open Graph images)"
       ]
+    },
+    {
+      "label": "runx receipt",
+      "receipt_id": "sha256:893989053b50159a5508a5af977f0f090911dcab0c34a34eba52097ef290ceee",
+      "run_id": "run_default_7acb9e44a0ee96c8",
+      "status": "sealed",
+      "skill_name": "gin-docs",
+      "verified": true,
+      "reference": "runx:receipt:sha256:893989053b50159a5508a5af977f0f090911dcab0c34a34eba52097ef290ceee"
     }
   ]
 }
