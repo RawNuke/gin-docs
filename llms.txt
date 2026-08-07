@@ -1,0 +1,14 @@
+# Gin Web Framework
+
+> Package gin implements a HTTP web framework called gin.
+
+## Go API
+
+- [github.com/gin-gonic/gin](/go-api/package-root.html): Package gin implements a HTTP web framework called gin.
+- [binding](/go-api/pkg-binding.html): github.com/gin-gonic/gin/binding
+- [codec/json](/go-api/pkg-codec-json.html): github.com/gin-gonic/gin/codec/json
+- [ginS](/go-api/pkg-ginS.html): github.com/gin-gonic/gin/ginS
+- [internal/bytesconv](/go-api/pkg-internal-bytesconv.html): github.com/gin-gonic/gin/internal/bytesconv
+- [internal/fs](/go-api/pkg-internal-fs.html): github.com/gin-gonic/gin/internal/fs
+- [render](/go-api/pkg-render.html): github.com/gin-gonic/gin/render
+- [Go API](/go-api.html): github.com/gin-gonic/gin
