@@ -1,0 +1,98 @@
+{
+  "summary": "Sourcey 3.6.5 godoc documentation for gin-gonic/gin, a maintained Go HTTP web framework (MIT license), pinned at commit 34dac209ffb6ef85cc78c5d217bbb7ad001d68fd. Built with the godoc adapter against the live Go toolchain (go1.26.5 darwin/arm64). The site documents 8 packages with 29+ exported API signatures across 9 HTML pages, including the root gin package, binding, render, ginS, codec/json, internal/bytesconv, and internal/fs. Deployed to GitHub Pages at https://rawnuke.github.io/gin-docs/.",
+  "observations": [
+    {
+      "label": "runx CLI version",
+      "value": "runx-cli 0.8.2",
+      "command": "npx @runxhq/cli --version",
+      "timestamp": "2026-08-07T00:55:00Z"
+    },
+    {
+      "label": "Sourcey version",
+      "value": "sourcey v3.6.5",
+      "command": "npx sourcey --version",
+      "timestamp": "2026-08-07T00:45:00Z"
+    },
+    {
+      "label": "Target repository",
+      "value": "https://github.com/gin-gonic/gin",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "pinned_commit": "34dac209ffb6ef85cc78c5d217bbb7ad001d68fd",
+      "last_commit_date": "2026-06-27T00:48:16+08:00"
+    },
+    {
+      "label": "Go toolchain",
+      "value": "go1.26.5 darwin/arm64",
+      "command": "go version"
+    },
+    {
+      "label": "Sourcey adapter",
+      "value": "godoc",
+      "config": {
+        "module": ".",
+        "packages": ["./..."],
+        "mode": "auto",
+        "includeTests": true
+      }
+    },
+    {
+      "label": "Sourcey config",
+      "file": "sourcey.config.ts",
+      "content": "import { defineConfig, godoc } from \"sourcey\"; export default defineConfig({ name: \"Gin Web Framework\", siteUrl: \"https://gin.pages.dev\", repo: \"https://github.com/gin-gonic/gin\", editBranch: \"master\", navigation: { tabs: [{ tab: \"Go API\", source: godoc({ module: \".\", packages: [\"./...\"] }) }] }, theme: { preset: \"default\", colors: { primary: \"#00ADD8\", light: \"#00B5E2\", dark: \"#0087A8\" } } });"
+    },
+    {
+      "label": "Build command",
+      "value": "npx sourcey build -o dist",
+      "output": "Sourcey: building documentation site\n  Pages:  8\n  Output: .../dist\n  Time:   14.9s",
+      "timestamp": "2026-08-07T00:55:00Z"
+    },
+    {
+      "label": "Page list",
+      "value": [
+        "index.html (root landing page, aggregates all packages)",
+        "go-api.html (Go API tab landing)",
+        "go-api/package-root.html (github.com/gin-gonic/gin)",
+        "go-api/pkg-binding.html (binding package)",
+        "go-api/pkg-render.html (render package)",
+        "go-api/pkg-ginS.html (ginS package)",
+        "go-api/pkg-codec-json.html (codec/json package)",
+        "go-api/pkg-internal-bytesconv.html (internal/bytesconv package)",
+        "go-api/pkg-internal-fs.html (internal/fs package)"
+      ],
+      "page_count": 9,
+      "package_count": 8
+    },
+    {
+      "label": "Coverage notes",
+      "value": "29+ exported function and type signatures documented from source. Covers the core gin engine, context, router group, binding, render, and utility packages. All public APIs in the documented packages are represented.",
+      "estimated_api_count": 29
+    },
+    {
+      "label": "Deployment",
+      "public_url": "https://rawnuke.github.io/gin-docs/",
+      "host": "GitHub Pages",
+      "branch": "main",
+      "repo": "https://github.com/RawNuke/gin-docs",
+      "status": "HTTP 200"
+    },
+    {
+      "label": "Search index",
+      "file": "search-index.json",
+      "format": "Sourcey fuzzy search index",
+      "size_bytes": 171057
+    },
+    {
+      "label": "Generated artifacts",
+      "value": [
+        "llms.txt (LLM context file)",
+        "llms-full.txt (full LLM context)",
+        "sitemap.xml",
+        "sourcey.css",
+        "sourcey.js",
+        "search-index.json",
+        "_og/*.png (Open Graph images)"
+      ]
+    }
+  ]
+}
